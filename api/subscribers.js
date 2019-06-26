@@ -49,7 +49,8 @@ function Subscribers (client) {
   this.getDetails = (email, history) => {
     return client.Get('/subscribers/', {
       email: email,
-      history: history
+      history: history,
+      mergeUrl: true
     })
   }
 
